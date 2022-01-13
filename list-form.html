@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d6a1be3883.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="/style/styles.css" />
+    <title>Maqueta</title>
+    <!-- FAVICON HERE -->
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="navbar">
+          <div class="navbar-title">
+            <h1>Lista de la compra</h1>
+          </div>
+
+          <div class="navbar-navigation">
+            <ul class="navigation-items">
+              <li class="navigation-items__item">
+                <a class="navigation-items__link" href="">Principal</a>
+              </li>
+              <li class="navigation-items__item">
+                <a class="navigation-items__link active" href="">Lista</a>
+              </li>
+              <li class="navigation-items__item">
+                <a class="navigation-items__link" href="">Acerca</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="cart">
+          <div class="cart__icon">
+            <i class="fas fa-minus-circle fa-3x"></i>
+          </div>
+
+          <p class="cart__text">2/3 comprados</p>
+        </section>
+
+        <section class="form-article">
+          <h3>Editar articulo</h3>
+
+          <form class="form-article__container">
+            <div class="fieldname_container">
+              <div>
+                <div class="field-name">
+                  <label for="stacked-text">Nombre:</label>
+                  <input type="text" id="stacked-text" />
+                </div>
+
+                <div class="field-name">
+                  <label for="stacked-text">Precio:</label>
+                  <input type="text" id="stacked-text" />
+                </div>
+              </div>
+              <span class="field-icon">€</span>
+            </div>
+            <button type="submit" class="form-article__button">
+              Modificar
+            </button>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
