@@ -58,6 +58,18 @@ html {
   margin: 0 0.8rem;
 }
 
+.item-text {
+  font-size: 28px;
+  font-weight: 300;
+  margin-right: 3rem;
+}
+
+.label-text,
+label {
+  font-size: 28px;
+  font-weight: 300;
+}
+
 .navigation-items__link.active {
   font-weight: bold;
 }
@@ -84,4 +96,93 @@ html {
   letter-spacing: 1px;
   font-size: 32px;
   font-weight: 300;
+}
+
+.articles {
+  height: 100vh;
+  position: relative;
+  background-color: #ff8d26;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.articles-items {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+  width: calc(100% - 1.7rem);
+}
+
+.articles-items__item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0.5rem; */
+}
+
+.text-container {
+  display: flex;
+  align-items: center;
+}
+
+.item-text {
+  margin-left: 2rem;
+}
+
+/* CHECKBOX */
+
+.form-group {
+  display: block;
+}
+
+.form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group label {
+  position: relative;
+  cursor: pointer;
+}
+
+.form-group label:before {
+  content: "";
+  background-color: #fff;
+  border: 2px solid #eee;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.form-group input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.articles-total__price {
+  margin-top: 1rem;
+  font-size: 28px;
+  font-weight: 300;
+  margin-left: 32.3rem;
+  width: calc(100% - 1.7rem);
 }
