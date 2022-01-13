@@ -18,13 +18,18 @@ html {
 }
 
 .container {
-  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+}
+
+.container {
+  width: 650px;
   display: flex;
   justify-content: center;
 }
 
 .header {
-  width: 650px;
   background-color: #456cbb;
   display: flex;
   align-items: center;
@@ -32,7 +37,8 @@ html {
 
 .navbar {
   width: 100%;
-  height: 8rem;
+  padding: 0 1.5rem;
+  height: 6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,15 +55,33 @@ html {
 }
 
 .navigation-items__item {
-  margin: 0 1rem;
+  margin: 0 0.8rem;
 }
 
-navigation-items__link .active {
+.navigation-items__link.active {
   font-weight: bold;
-  color: var(--color-red);
 }
 
 .navigation-items__item a {
   font-size: 20px;
   color: var(--color-black);
+}
+
+.cart {
+  padding: 0 1.5rem;
+  background-color: #f97500;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fa-plus-circle {
+  height: 40px;
+}
+
+.cart__text {
+  letter-spacing: 1px;
+  font-size: 32px;
+  font-weight: 300;
 }
