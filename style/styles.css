@@ -98,6 +98,11 @@ label {
   font-weight: 300;
 }
 
+.cart__link {
+  cursor: pointer;
+  color: var(--color-black);
+}
+
 .articles {
   height: 100vh;
   position: relative;
